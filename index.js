@@ -11,8 +11,8 @@ var mysql = require('mysql');
 var con = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "123",
-  database: "yii2advanced"
+  password: "password",
+  database: "database"
 });
 
 app.get('/posts', function (req, res) {    
@@ -26,7 +26,6 @@ app.get('/posts', function (req, res) {
     });
 
 });
-
 
 app.post('/posts', function (req, res) {
     
